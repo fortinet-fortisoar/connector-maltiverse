@@ -1,0 +1,219 @@
+{
+    "name": "maltiverse",
+    "label": "Maltiverse",
+    "version": "1.0.0",
+    "description": "Maltiverse Threat Intelligence Feeds can be integrated with your security stack to provide improvement in terms of detections and protection capabilities from different points of view. You can also upload an deploy your own Threat Intelligence!",
+    "publisher": "Fortinet",
+    "cs_approved": true,
+    "cs_compatible": true,
+    "category": "Threat Intelligence",
+    "icon_small_name": "small.png",
+    "icon_large_name": "large.png",
+    "tags": [
+      "Enrichment",
+      "IP_Enrichment",
+      "FileHash_Enrichment",
+      "URL_Enrichment",
+      "Domain_Enrichment",
+      "File_Enrichment"
+    ],
+    "help_online": "",
+    "configuration": {
+        "fields": [
+          {
+            "title": "Server",
+            "description": "Specify the server URL of the Maltiverse server to which you will connect and perform the automated operations.",
+            "required": true,
+            "editable": true,
+            "visible": true,
+            "type": "text",
+            "name": "server_url",
+            "value": "https://api.maltiverse.com"
+          },
+          {
+            "title": "API Key",
+            "description": "Specify the API key that is configured for your account to access the Maltiverse server.",
+            "required": true,
+            "editable": true,
+            "visible": true,
+            "type": "password",
+            "name": "api_key"
+          },
+          {
+            "title": "Verify SSL",
+            "name": "verify_ssl",
+            "required": false,
+            "editable": true,
+            "visible": true,
+            "type": "checkbox",
+            "value": true,
+            "tooltip": "Specifies whether the SSL certificate for the server is to be verified or not. By default, this option is set as True.",
+            "description": "Specifies whether the SSL certificate for the server is to be verified or not. By default, this option is set as True."
+          }
+        ]
+      },
+    "operations": [
+        {
+            "operation": "get_ip_reputation",
+            "title": "Get IP Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
+            "category": "investigation",
+            "api_output_schema": "get_output_schema_ip",
+            "annotation": "get_ip_reputation",
+            "output_schema": {
+                "ip_addr":"",
+                "type":"",
+                "creation_time":"",
+                "modification_time":"",
+                "classification":"",
+                "blacklist":[],
+                "tag":[]
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "IP",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "ip",
+                "description": "Specify the IP address for which you want to retrieve a Maltiverse reputation."
+              },
+              {
+                "title": "Threshold",
+                "required": false,
+                "editable": true,
+                "visible": true,
+                "type": "number",
+                "name": "threshold",
+                "description": "If the true positives are more that the thrshold then IP address can be considered as malicious."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_domain_reputation",
+            "title": "Get Domain Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
+            "category": "investigation",
+            "api_output_schema": "get_output_schema_domain",
+            "annotation": "get_domain_reputation",
+            "output_schema": {
+                "domain":"",
+                "type":"",
+                "creation_time":"",
+                "modification_time":"",
+                "classification":"",
+                "blacklist":[],
+                "tag":[]
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "Domain",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "domain",
+                "description": "Specify the Domain for which you want to retrieve a Maltiverse reputation."
+              },
+              {
+                "title": "Threshold",
+                "required": false,
+                "editable": true,
+                "visible": true,
+                "type": "number",
+                "name": "threshold",
+                "description": "If the true positives are more that the thrshold then Domain can be considered as malicious."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_url_reputation",
+            "title": "Get URL Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.",
+            "category": "investigation",
+            "api_output_schema": "get_output_schema_url",
+            "annotation": "get_url_reputation",
+            "output_schema": {
+                "domain":"",
+                "type":"",
+                "creation_time":"",
+                "modification_time":"",
+                "classification":"",
+                "blacklist":[],
+                "tag":[]
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "URL",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "url",
+                "description": "Specify the URL for which you want to retrieve a Maltiverse reputation."
+              },
+              {
+                "title": "Threshold",
+                "required": false,
+                "editable": true,
+                "visible": true,
+                "type": "number",
+                "name": "threshold",
+                "description": "If the true positives are more that the thrshold then URL can be considered as malicious."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_file_reputation",
+            "title": "Get File Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
+            "category": "investigation",
+            "api_output_schema": "get_output_schema_file",
+            "annotation": "get_file_reputation",
+            "output_schema": {
+                "antivirus":[],
+                "filename":"",
+                "md5":"",
+                "sha1":"",
+                "sha256":"",
+                "sha512":"",
+                "filetype":"",
+                "type":"",
+                "creation_time":"",
+                "modification_time":"",
+                "classification":"",
+                "blacklist":[],
+                "tag":[]
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "File Hash",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "filehash",
+                "description": "Specify the File Hash for which you want to retrieve a Maltiverse reputation."
+              },
+              {
+                "title": "Threshold",
+                "required": false,
+                "editable": true,
+                "visible": true,
+                "type": "number",
+                "name": "threshold",
+                "description": "If the true positives are more that the thrshold then File Hash can be considered as malicious."
+              }
+              
+            ]
+        }
+    ]
+  }

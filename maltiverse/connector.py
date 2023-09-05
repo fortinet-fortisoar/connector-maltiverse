@@ -8,7 +8,7 @@ from .operations import _check_health, operations
 logger = get_logger('maltiverse')
 
 
-class Maltiverse(Connector):
+class MaltiverseConn(Connector):
     def execute(self, config, operation, params, **kwargs):
         try:
             action = operations.get(operation)

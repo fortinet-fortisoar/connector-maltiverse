@@ -14,7 +14,7 @@ class Maltiverse(object):
     def __init__(self, config):
         self.server_url = config.get('server_url').strip()
         self.api_key = config.get('api_key')
-        self.headers = {'accept': 'application/json', 'Authorization: Bearer ': self.api_key}
+        self.headers = {'accept': 'application/json', 'Authorization': 'Bearer {}'.format(self.api_key)}
         if not self.server_url.startswith('https://'):
             self.server_url = 'https://{0}'.format(self.server_url)
         if self.server_url.endswith('/'):
@@ -25,7 +25,7 @@ class Maltiverse(object):
         if headers:
             self.headers.update(headers)
         try:
-            logger.debug('Making a request with {0} - {1} and headers - {2}'.format(method, url, self.headers))
+            logger.debug('Making a request with {0} - {1}'.format(method, url))
             response = requests.request(method, url, headers=self.headers)
             if health_check and response.status_code == 200:
                 return response
@@ -80,13 +80,13 @@ def get_domain_reputation(config, params):
 
 def get_url_reputation(config, params):
     """
-    Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.
+    Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.
     :param config: config
     :param params: params
     :return: Returns reputation and details from Maltiverse.
     """
     obj = Maltiverse(config)
-    endpoint = '/url/{0}'.format(params.get('url'))
+    endpoint = '/url/{0}'.format(params.get('urlhash'))
     return obj.make_api_call(endpoint=endpoint)
 
 

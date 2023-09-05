@@ -1,0 +1,298 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "uuid": "84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+      "@type": "WorkflowCollection",
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "uuid": "5fe2be0a-e672-4900-b186-e8332f054912",
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "steps": [
+            {
+              "uuid": "92d7806c-d23b-4531-b544-d745bef4d197",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "7dc40e62-2d51-4a09-a3d2-e1abb965fac0",
+              "@type": "WorkflowStep",
+              "name": "Get IP Reputation",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "''",
+                "params": {
+                  "ip": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_ip_reputation",
+                "operationTitle": "Get IP Reputation"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
+          "name": "Get IP Reputation",
+          "tag": "#Maltiverse",
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/92d7806c-d23b-4531-b544-d745bef4d197",
+          "routes": [
+            {
+              "uuid": "b370bffc-6ad9-485c-b2c9-dcaa90f9ca5e",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get IP Reputation",
+              "sourceStep": "/api/3/workflow_steps/92d7806c-d23b-4531-b544-d745bef4d197",
+              "targetStep": "/api/3/workflow_steps/7dc40e62-2d51-4a09-a3d2-e1abb965fac0"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "eeacfaa0-e3f0-4c62-bec3-a8eeb5cfc462",
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "steps": [
+            {
+              "uuid": "87ed022e-1855-4567-bc52-f25aa961aad1",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "5b270d63-86a5-4c68-8329-6f0f6bd36eb6",
+              "@type": "WorkflowStep",
+              "name": "Get Domain Reputation",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "''",
+                "params": {
+                  "domain": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_domain_reputation",
+                "operationTitle": "Get Domain Reputation"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
+          "name": "Get Domain Reputation",
+          "tag": "#Maltiverse",
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/87ed022e-1855-4567-bc52-f25aa961aad1",
+          "routes": [
+            {
+              "uuid": "ae89fb61-b01a-4fa4-8a0b-3664c1d15970",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get Domain Reputation",
+              "sourceStep": "/api/3/workflow_steps/87ed022e-1855-4567-bc52-f25aa961aad1",
+              "targetStep": "/api/3/workflow_steps/5b270d63-86a5-4c68-8329-6f0f6bd36eb6"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "e8e77d73-44ca-4969-8b35-dd5c91319e0d",
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "steps": [
+            {
+              "uuid": "82c23161-e3ba-4fd9-8353-683f8c2f4388",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "6335944e-41f7-426e-a9fb-20f29b24410c",
+              "@type": "WorkflowStep",
+              "name": "Get URL Reputation",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "''",
+                "params": {
+                  "urlhash": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_url_reputation",
+                "operationTitle": "Get URL Reputation"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
+          "name": "Get URL Reputation",
+          "tag": "#Maltiverse",
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/82c23161-e3ba-4fd9-8353-683f8c2f4388",
+          "routes": [
+            {
+              "uuid": "5b267621-ffa5-4ec4-85b0-77736044e709",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get URL Reputation",
+              "sourceStep": "/api/3/workflow_steps/82c23161-e3ba-4fd9-8353-683f8c2f4388",
+              "targetStep": "/api/3/workflow_steps/6335944e-41f7-426e-a9fb-20f29b24410c"
+            }
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "uuid": "383123b2-c370-4dc6-bd44-b8ff6d379a71",
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "steps": [
+            {
+              "uuid": "5ea67241-699a-4ab2-b12f-38824ee05a47",
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "left": "20",
+              "top": "20",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62"
+            },
+            {
+              "uuid": "717f458b-f921-475d-be1a-64a086885e71",
+              "@type": "WorkflowStep",
+              "name": "Get File Reputation",
+              "description": null,
+              "status": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "''",
+                "params": {
+                  "filehash": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_file_reputation",
+                "operationTitle": "Get File Reputation"
+              },
+              "left": "188",
+              "top": "120",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671"
+            }
+          ],
+          "triggerLimit": null,
+          "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
+          "name": "Get File Reputation",
+          "tag": "#Maltiverse",
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ],
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "parameters": [],
+          "synchronous": false,
+          "triggerStep": "/api/3/workflow_steps/5ea67241-699a-4ab2-b12f-38824ee05a47",
+          "routes": [
+            {
+              "uuid": "0e557735-017e-4838-8b7d-33ae2070decc",
+              "@type": "WorkflowRoute",
+              "label": null,
+              "isExecuted": false,
+              "name": "Start-> Get File Reputation",
+              "sourceStep": "/api/3/workflow_steps/5ea67241-699a-4ab2-b12f-38824ee05a47",
+              "targetStep": "/api/3/workflow_steps/717f458b-f921-475d-be1a-64a086885e71"
+            }
+          ]
+        }
+      ],
+      "name": "Sample - Maltiverse - 1.0.0",
+      "description": "Maltiverse Threat Intelligence Feeds can be integrated with your security stack to provide improvement in terms of detections and protection capabilities from different points of view. You can also upload an deploy your own Threat Intelligence!",
+      "visible": true,
+      "recordTags": [
+        "Maltiverse",
+        "maltiverse"
+      ]
+    }
+  ]
+}

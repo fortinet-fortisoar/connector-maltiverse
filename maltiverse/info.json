@@ -10,7 +10,6 @@
     "icon_small_name": "small.png",
     "icon_large_name": "large.png",
     "tags": [
-      "Enrichment",
       "IP_Enrichment",
       "FileHash_Enrichment",
       "URL_Enrichment",
@@ -61,13 +60,42 @@
             "api_output_schema": "get_output_schema_ip",
             "annotation": "get_ip_reputation",
             "output_schema": {
-                "ip_addr":"",
-                "type":"",
-                "creation_time":"",
-                "modification_time":"",
-                "classification":"",
-                "blacklist":[],
-                "tag":[]
+                "address": "",
+                "as_name": "",
+                "asn_cidr": "",
+                "asn_country_code": "",
+                "asn_date": "",
+                "asn_registry": "",
+                "cidr": [],
+                "classification": "",
+                "country_code": "",
+                "creation_time": "",
+                "email": [],
+                "ip_addr": "",
+                "is_cdn": "",
+                "is_cnc": "",
+                "is_distributing_malware": "",
+                "is_hosting": "",
+                "is_iot_threat": "",
+                "is_known_attacker": "",
+                "is_known_scanner": "",
+                "is_mining_pool": "",
+                "is_open_proxy": "",
+                "is_sinkhole": "",
+                "is_tor_node": "",
+                "is_vpn_node": "",
+                "location": {
+                    "lat": "",
+                    "lon": ""
+                },
+                "modification_time": "",
+                "number_of_blacklisted_domains_resolving":"",
+                "number_of_domains_resolving": "",
+                "number_of_offline_malicious_urls_allocated": "",
+                "number_of_online_malicious_urls_allocated": "",
+                "number_of_whitelisted_domains_resolving": "",
+                "registrant_name": "",
+                "type": ""
             },
             "enabled": true,
             "parameters": [
@@ -79,15 +107,6 @@
                 "type": "text",
                 "name": "ip",
                 "description": "Specify the IP address for which you want to retrieve a Maltiverse reputation."
-              },
-              {
-                "title": "Threshold",
-                "required": false,
-                "editable": true,
-                "visible": true,
-                "type": "number",
-                "name": "threshold",
-                "description": "If the true positives are more that the thrshold then IP address can be considered as malicious."
               }
               
             ]
@@ -100,13 +119,49 @@
             "api_output_schema": "get_output_schema_domain",
             "annotation": "get_domain_reputation",
             "output_schema": {
-                "domain":"",
-                "type":"",
-                "creation_time":"",
-                "modification_time":"",
-                "classification":"",
-                "blacklist":[],
-                "tag":[]
+                "as_name": "",
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "dnssec": [],
+                "domain": "",
+                "domain_consonants": "",
+                "domain_lenght": "",
+                "email": [],
+                "entropy":"",
+                "hostname": "",
+                "index_selection": "",
+                "is_alive": "",
+                "is_cnc": "",
+                "is_distributing_malware": "",
+                "is_iot_threat": "",
+                "is_mining_pool": "",
+                "is_phishing": "",
+                "is_storing_phishing": "",
+                "last_online_time": "",
+                "modification_time": "",
+                "nameserver": [],
+                "number_of_offline_malicious_urls_allocated": "",
+                "number_of_online_malicious_urls_allocated": "",
+                "registrant_name": "",
+                "resolved_ip": [
+                    {
+                        "ip_addr": "",
+                        "timestamp": ""
+                    }
+                ],
+                "status": [],
+                "tag": [],
+                "tld": "",
+                "type": ""
             },
             "enabled": true,
             "parameters": [
@@ -118,15 +173,6 @@
                 "type": "text",
                 "name": "domain",
                 "description": "Specify the Domain for which you want to retrieve a Maltiverse reputation."
-              },
-              {
-                "title": "Threshold",
-                "required": false,
-                "editable": true,
-                "visible": true,
-                "type": "number",
-                "name": "threshold",
-                "description": "If the true positives are more that the thrshold then Domain can be considered as malicious."
               }
               
             ]
@@ -134,38 +180,41 @@
         {
             "operation": "get_url_reputation",
             "title": "Get URL Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.",
+            "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
             "category": "investigation",
             "api_output_schema": "get_output_schema_url",
             "annotation": "get_url_reputation",
             "output_schema": {
-                "domain":"",
-                "type":"",
-                "creation_time":"",
-                "modification_time":"",
-                "classification":"",
-                "blacklist":[],
-                "tag":[]
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "domain": "",
+                "hostname": "",
+                "modification_time": "",
+                "tag": [],
+                "tld": "",
+                "type": "",
+                "url": "",
+                "urlchecksum": ""
             },
             "enabled": true,
             "parameters": [
               {
-                "title": "URL",
+                "title": "URL Sha256 Hash",
                 "required": true,
                 "editable": true,
                 "visible": true,
                 "type": "text",
-                "name": "url",
-                "description": "Specify the URL for which you want to retrieve a Maltiverse reputation."
-              },
-              {
-                "title": "Threshold",
-                "required": false,
-                "editable": true,
-                "visible": true,
-                "type": "number",
-                "name": "threshold",
-                "description": "If the true positives are more that the thrshold then URL can be considered as malicious."
+                "name": "urlhash",
+                "description": "Specify the URL sha256 hash for which you want to retrieve a Maltiverse reputation."
               }
               
             ]
@@ -178,19 +227,25 @@
             "api_output_schema": "get_output_schema_file",
             "annotation": "get_file_reputation",
             "output_schema": {
-                "antivirus":[],
-                "filename":"",
-                "md5":"",
-                "sha1":"",
-                "sha256":"",
-                "sha512":"",
-                "filetype":"",
-                "type":"",
-                "creation_time":"",
-                "modification_time":"",
-                "classification":"",
-                "blacklist":[],
-                "tag":[]
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "labels": [],
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "filename": [],
+                "filetype": "",
+                "md5": "",
+                "modification_time": "",
+                "sha1": "",
+                "sha256": "",
+                "type": ""
             },
             "enabled": true,
             "parameters": [
@@ -202,17 +257,7 @@
                 "type": "text",
                 "name": "filehash",
                 "description": "Specify the File Hash for which you want to retrieve a Maltiverse reputation."
-              },
-              {
-                "title": "Threshold",
-                "required": false,
-                "editable": true,
-                "visible": true,
-                "type": "number",
-                "name": "threshold",
-                "description": "If the true positives are more that the thrshold then File Hash can be considered as malicious."
               }
-              
             ]
         }
     ]

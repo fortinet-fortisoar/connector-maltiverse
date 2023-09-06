@@ -74,7 +74,7 @@ def get_domain_reputation(config, params):
     :return: Returns reputation and details from Maltiverse..
     """
     obj = Maltiverse(config)
-    endpoint = '/domain/{0}'.format(params.get('domain'))
+    endpoint = '/hostname/{0}'.format(params.get('domain'))
     return obj.make_api_call(endpoint=endpoint)
 
 

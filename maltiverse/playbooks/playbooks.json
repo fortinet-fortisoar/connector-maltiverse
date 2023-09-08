@@ -1,0 +1,1392 @@
+{
+  "type": "workflow_collections",
+  "data": [
+    {
+      "@type": "WorkflowCollection",
+      "name": "Sample - Maltiverse - 1.0.0",
+      "description": "Sample playbooks for \"Maltiverse\" connector. If you are planning to use any of the sample playbooks in your environment, ensure that you clone those playbooks and move them to a different collection, since the sample playbook collection gets deleted during connector upgrade and delete.",
+      "visible": true,
+      "image": "data:png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAIAAAABc2X6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAABfRJREFUeNrsmntQVFUcx++59+697N3H3V3YXWCXp8tTQi1MKAswLUsY0cZwzFFsJsdkcip1bNKpmTTHbLQHNj4KNMvJMkQdBWdytCxRFBWFMFwCecMCC+yLfd/Ouojy8JU6047n/HXm/M6993zO7/v7nd+dewHHcdjj1HDsMWsIGAEjYASMgBEwAkbACBgBI2AEjIARMAJGwAgYASNgBIyAETACRsAIGAEj4HsE1na37a08ZbT1jzq7z2rZdfFEbXe77wKDwe/DBqtl31+nj1w973C5GB6dnfBMVvwkHACvFQ6WaC/8XFUKmQEGUkKjFydN82dEPgncYtBvKSup6mgcZuMRxHTNhMzYpMLqM7/WXnKP+HSeoAxdMD41Tq72MeCPrx47W3UZWGz3fTVFKvwD8l9Y9CArcLs5h8NO0/SwcQ7joJQeTQzzKS42yB2p4Px493wdzokZTszHSOIBV1BTo52RMc/bd3Jub6fdbnrt70KTy/4ok5aE4eJU7mApRtwxdeOAE/hxUgFGEV4/PMTVzK0p9HYUPMH76meFBPXQgcmhAsewQNYdyGJ9/aC1B/TbR6JiNIkNv2agNTe37tz1o0gkLCk55u8v+2Td6srK6vyCPQCAFcuXTp6cDMNnx47dRQeK3W73qlVvb968dc8P2269l51zfdpcqqQEc/zjt7ef367J2ND851uBSRLSD1p36S6li8NhGi3oqGi09UX4SRYrn4KTN7WcThQoSw1N8xWJVyydh/Va+MQZUk2GLLrDbvq6vbzJZlDyBMuCnw6mRLdxJsvnYoJuehtAVJqTCkfQDgkyp9NZVHREKmF3FuTFxGiW5q48V16xJW/DtKmpK1Z+5HS69u07ePBQyVdfri/a/11x8bH6+gaXyz0kTQLidUXCK1INFE6b3QRHEhnlSUODV+3Vlk45j1nTcGKaJPJbTWaqOGxd8x/QpHf27+2smi7VBJD8Al3Fxoip68OmxPADoOnz1rJMaXR+VGaOYlx+x8U7Fh448Hh7rJqTiz0C5lOjZpBhko6NjVq4cG5wcOCsWTPa2nRrVr8XEqJasiTHZDLr9T119Y3vvrMkOnqMQMBA08gfpuAT1JQY6nlwJI0NP957DXbKTa1jGfkFc5uKEicKFId7tMU9tRTALW4HtGbKYiaJVEKClpL8rW3l7XZjFF/WbDPAJ8QxAfAOP3VVm10OF8eRd5M8zkkZoDffY4QolXJvh6YoiURM054gJK43uDl2u51lxd4JUPk4fvc6T0DwDC4b1OSJvmvpbLjJ5aiz9XzY8FuaJHy5KgU63DvN2yEA+CLipeO99ZtbzyQwigxZlNaqX91wfJJInaMcF0azD6W0vI+TQzMmYuPGPJ2uEwbz2rWbYCR7tpQkzWaLXt8LIwLGMMzPnY4h+5sdMHZbe3mLzZgsUqeIVCTAZ/vHzZTFQN9+037h1pldDsslc0emLPoD9XNnjC2RfrIIWjJP/sQ8eYKIoH7pqr4N8P3l3ZuzcYIQCoXePnSpRMIOmmRSKQB4dnZWcnLS7Nk56VOykpLGQzngOIiICIMBPzNrvk7XBTGW1R39XlcJd5ElB07m59mwVrsRBvZ1h1PrQtOhmN/QHsprPZsi8tQ8ApzigQGQU4bGN2sPf9ZSmhuUBG+yXJVc2H1lkfYQFEUcI79ReDSdLDO23LJRRs/pCs9Y/Lr3TNYBSQOME/E9uumxDM5V8MUFqQt8qNIiRyu+YGHdj5ltnlzFDJyEMEtjLANDGvL/R0H/f4CJUZftcgPoagD8WGG/Wjbg7RGNhxO+B5wbNJHGyd/7GtxDw1dKM3PHTHxRHX+09589nZXGoYUeTZCZoYmvRj7pq6+H16y9u3WXy0wtoNNIWJ0vhyTkxKT4EQPVNTzE9ndfOaCvsRpMMKQnBITkxqcFMqwPvw/fyHJN59rq5qgTVQLpyNk6h3lvU0UaG5bor8Z8swH0gzgCRsAIGAEjYASMgBEwAkbACBgBI2AEjIARMAJGwAgYASNgBIyAETACRsAI+PEE/leAAQB36D06BiY0vQAAAABJRU5ErkJggg==",
+      "uuid": "84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+      "id": 44,
+      "deletedAt": null,
+      "importedBy": [],
+      "recordTags": [
+        "Maltiverse",
+        "maltiverse"
+      ],
+      "workflows": [
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "FileHash > Maltiverse > Enrichment",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [
+            "indicator_value",
+            "style_colors"
+          ],
+          "synchronous": false,
+          "lastModifyDate": 1693994486,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/8decc849-4487-4428-943b-87cb51a665ca",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Configuration",
+              "description": null,
+              "arguments": {
+                "useMockOutput": "{{globalVars.Demo_mode}}",
+                "indicator_value": "{{vars.input.params['indicator_value']}}"
+              },
+              "status": null,
+              "top": "165",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "3852731a-170e-475a-9ac2-d10d86a63b14"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Get File Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "73ce8859-e436-4fa0-8d7c-7ffea28b168f",
+                "params": {
+                  "filehash": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_file_reputation",
+                "mock_result": "{\n    \"blacklist\": [\n        {\n            \"count\": 1,\n            \"description\": \"NanoCore\",\n            \"first_seen\": \"2021-10-29 15:53:06\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2021-10-29 15:53:06\",\n            \"source\": \"Abuse.ch\"\n        }\n    ],\n    \"classification\": \"malicious\",\n    \"creation_time\": \"2021-10-29 17:15:09\",\n    \"filename\": [\n        \"3ea7bd2fb52842ea458767db3b9a3189\"\n    ],\n    \"filetype\": \"application/x-dosexec\",\n    \"md5\": \"3ea7bd2fb52842ea458767db3b9a3189\",\n    \"modification_time\": \"2021-10-31 15:15:53\",\n    \"sha1\": \"a7e5bc074c3f2f318c5c38961d2d714b181f5aa6\",\n    \"sha256\": \"c8c69f36f89061f4ce86b108c0ff12ade49d665eace2d60ba179a2341bd54c40\",\n    \"type\": \"sample\"\n}",
+                "ignore_errors": true,
+                "operationTitle": "Get File Reputation",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "300",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "6c988c2f-810f-49fa-a2d2-40c438208522"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "If Reputation is Found",
+              "description": null,
+              "arguments": {
+                "conditions": [
+                  {
+                    "option": "Yes",
+                    "step_iri": "/api/3/workflow_steps/1d9751d1-0c3d-475f-8ec2-01c95956e61d",
+                    "condition": "{{ vars.steps.Get_File_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "step_name": "Maltiverse Reputation Summary"
+                  },
+                  {
+                    "option": "No",
+                    "default": true,
+                    "step_iri": "/api/3/workflow_steps/7ddac6ae-84d0-4df1-b0a4-3327ebabd520",
+                    "step_name": "No Operation"
+                  }
+                ]
+              },
+              "status": null,
+              "top": "435",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/12254cf5-5db7-4b1a-8cb1-3af081924b28",
+              "group": null,
+              "uuid": "d5b4f48d-dd1f-4441-b5af-df563f249808"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Maltiverse Reputation Summary",
+              "description": null,
+              "arguments": {
+                "params": {
+                  "value": "<table class=\"no-border\">\n    <tr>\n        <th colspan=\"4\" class=\"no-background padding-0\">\n            <div class=\"font-size-11 ng-binding padding-bottom-sm\">\n                <h4 style=\"color: orange;\"\n                    class=\"body-default-bgcolor margin-bottom-0 padding-bottom-md padding-left-md padding-top-md text-align-left\">\n                    Maltiverse Detection Summary</h4>\n            </div>\n        </th>\n    </tr>\n    <tr class=\"solid-border\">\n        <td>\n            <div small class=\"control-label\">Classification</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div>{% if vars.steps.Get_File_Reputation.data['classification'] == 'malicious' %}</div>\n                <div class=\"body-default-bgcolor card-number padding-left-md\"\n                    style=\"border-left: 5px solid {{vars.input.params.style_colors.Malicious}};padding: 11px;font-size: 18px !important;\">\n                    {{\"Malicious\"}}</div>\n                <div>{% elif vars.steps.Get_File_Reputation.data['classification'] == 'suspicious' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Suspicious}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Suspicious\"}}</div>\n                        <div>{% elif vars.steps.Get_File_Reputation.data['classification'] == 'whitelist' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Good}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Whitelist\"}}</div>\n                        <div>{% else %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors['No Reputation Available']}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Neutral\"}}</div>\n                        <div>{% endif %}</div>\n                </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">File Type</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_File_Reputation.data.filetype}}</div>\n            </div>\n        </td>  \n        <td>\n            <div small class=\"control-label\">Type</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_File_Reputation.data.type}}</div>\n            </div>\n        </td>\n    </tr>\n</table>"
+                },
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "format_richtext",
+                "operationTitle": "Utils: Format as RichText (Markdown)",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "1d9751d1-0c3d-475f-8ec2-01c95956e61d"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "No Operation",
+              "description": null,
+              "arguments": {
+                "params": [],
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "no_op",
+                "operationTitle": "Utils: No Operation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "475",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "7ddac6ae-84d0-4df1-b0a4-3327ebabd520"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Return Output Data",
+              "description": null,
+              "arguments": {
+                "verdict": "{% if vars.steps.Get_File_Reputation.data['classification'] == \"malicious\" %}{{\"Malicious\"}}{% elif vars.steps.Get_File_Reputation.data['classification'] == \"suspicious\" %}{{\"Suspicious\"}}{% elif vars.steps.Get_File_Reputation.data['classification'] == \"whitelist\" %}{{\"Good\"}}{% else %}{{\"No Reputation Available\"}}{% endif %}",
+                "cti_name": "Maltiverse",
+                "cti_score": "{{vars.steps.Get_File_Reputation.data['classification']}}",
+                "source_data": "{\"Maltiverse\": {{vars.steps.Get_File_Reputation.data}} }",
+                "field_mapping": "{\"filetype\": \"{{vars.steps.Get_File_Reputation.data.filetype}}\", \"filehashMD5\": \"{{vars.steps.Get_File_Reputation.data.md5}}\", \"filehashSHA1\": \"{{vars.steps.Get_File_Reputation.data.sha1}}\", \"filehashSHA256\": \"{{vars.steps.Get_File_Reputation.data.sha256}}\", \"type\": \"{{vars.steps.Get_File_Reputation.data.type}}\"  }",
+                "enrichment_summary": "{{vars.steps.Maltiverse_Reputation_Summary.data['formatted_string']}}"
+              },
+              "status": null,
+              "top": "700",
+              "left": "120",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "00356787-c663-4844-9ee4-5fcc97e230c3"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "status": null,
+              "top": "30",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+              "group": null,
+              "uuid": "8decc849-4487-4428-943b-87cb51a665ca"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Configuration -> Get IP Reputation",
+              "targetStep": "/api/3/workflow_steps/6c988c2f-810f-49fa-a2d2-40c438208522",
+              "sourceStep": "/api/3/workflow_steps/3852731a-170e-475a-9ac2-d10d86a63b14",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "ec533ff7-78af-4f81-af13-6fce9e4bda80"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Get IP Reputation -> If Reputation is Found",
+              "targetStep": "/api/3/workflow_steps/d5b4f48d-dd1f-4441-b5af-df563f249808",
+              "sourceStep": "/api/3/workflow_steps/6c988c2f-810f-49fa-a2d2-40c438208522",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "7e9715f1-ca60-4114-9393-690ccbcca77e"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> Maltiverse Reputation Summary",
+              "targetStep": "/api/3/workflow_steps/1d9751d1-0c3d-475f-8ec2-01c95956e61d",
+              "sourceStep": "/api/3/workflow_steps/d5b4f48d-dd1f-4441-b5af-df563f249808",
+              "label": "Yes",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "09e385f7-727b-4b30-8b79-256167ef87e5"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> No Operation",
+              "targetStep": "/api/3/workflow_steps/7ddac6ae-84d0-4df1-b0a4-3327ebabd520",
+              "sourceStep": "/api/3/workflow_steps/d5b4f48d-dd1f-4441-b5af-df563f249808",
+              "label": "No",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "84fd8946-3b8e-42be-8793-ba3ba39b8854"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Maltiverse Reputation Summary -> Return Output Data",
+              "targetStep": "/api/3/workflow_steps/00356787-c663-4844-9ee4-5fcc97e230c3",
+              "sourceStep": "/api/3/workflow_steps/1d9751d1-0c3d-475f-8ec2-01c95956e61d",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "4c1e7b49-be8c-4442-92e3-12c2b991425c"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Configuration",
+              "targetStep": "/api/3/workflow_steps/3852731a-170e-475a-9ac2-d10d86a63b14",
+              "sourceStep": "/api/3/workflow_steps/8decc849-4487-4428-943b-87cb51a665ca",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "1c600290-1490-43c6-9caf-2fb86ea8e249"
+            }
+          ],
+          "groups": [],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "28d72d00-a80f-4969-86ec-974adf3cc74c",
+          "id": 556,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "FileHash_Enrichment"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Get File Reputation",
+          "aliasName": null,
+          "tag": "#Maltiverse",
+          "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1693994534,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/864efca9-e7e4-499e-850a-181581fa44ca",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Get File Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "f52dec00-3d56-40c0-913e-0689a2dfb998",
+                "params": {
+                  "filehash": "c8c69f36f89061f4ce86b108c0ff12ade49d665eace2d60ba179a2341bd54c40"
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_file_reputation",
+                "operationTitle": "Get File Reputation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "240",
+              "left": "520",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "717f458b-f921-475d-be1a-64a086885e71"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "b47c0885-21b0-425f-9e70-00f5a11f5e7a",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "20",
+              "left": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "group": null,
+              "uuid": "864efca9-e7e4-499e-850a-181581fa44ca"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Get File Reputation",
+              "targetStep": "/api/3/workflow_steps/717f458b-f921-475d-be1a-64a086885e71",
+              "sourceStep": "/api/3/workflow_steps/864efca9-e7e4-499e-850a-181581fa44ca",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "91057be3-627b-47a9-ba4e-c6376e9442a9"
+            }
+          ],
+          "groups": [],
+          "priority": null,
+          "uuid": "383123b2-c370-4dc6-bd44-b8ff6d379a71",
+          "id": 549,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Domain > Maltiverse > Enrichment",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [
+            "indicator_value",
+            "style_colors"
+          ],
+          "synchronous": false,
+          "lastModifyDate": 1693943687,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/f81cfa07-ff7e-4fad-963f-3241e46bf71e",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Configuration",
+              "description": null,
+              "arguments": {
+                "good_score": "whitelist",
+                "nuetral_score": "neutral",
+                "useMockOutput": "{{globalVars.Demo_mode}}",
+                "indicator_value": "{{vars.input.params['indicator_value']}}",
+                "malicious_score": "malicious",
+                "suspicious_score": "suspicious"
+              },
+              "status": null,
+              "top": "165",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "d73765ad-9083-4c34-9bc7-625493b01d29"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Get Domain Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "73ce8859-e436-4fa0-8d7c-7ffea28b168f",
+                "params": {
+                  "domain": "{{vars.indicator_value}}"
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_domain_reputation",
+                "mock_result": "{\n    \"as_name\": \"AS60117 Host Sailor Ltd.\",\n    \"blacklist\": [\n        {\n            \"count\": 1,\n            \"description\": \"Malicious URL\",\n            \"first_seen\": \"2023-07-21 22:30:03\",\n            \"last_seen\": \"2023-07-21 22:30:03\",\n            \"source\": \"Hybrid-Analysis\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Malicious domain\",\n            \"first_seen\": \"2019-12-19 02:58:26\",\n            \"last_seen\": \"2019-12-19 02:58:26\",\n            \"source\": \"SANS Internet Storm Center\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Malicious site\",\n            \"first_seen\": \"2020-06-03 01:45:18\",\n            \"last_seen\": \"2020-06-03 01:45:18\",\n            \"source\": \"Hybrid-Analysis\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Inmortal malware domain\",\n            \"first_seen\": \"2017-10-15 14:49:07\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2021-02-11 08:47:33\",\n            \"source\": \"Malware Domains\"\n        }\n    ],\n    \"classification\": \"malicious\",\n    \"creation_time\": \"2017-10-15 14:49:07\",\n    \"dnssec\": [\n        \"unsigned\"\n    ],\n    \"domain\": \"gumblar.cn\",\n    \"domain_consonants\": 7,\n    \"domain_lenght\": 10,\n    \"email\": [\n        \"3xdomains@gmail.com\"\n    ],\n    \"entropy\": 3.321928094887362,\n    \"hostname\": \"gumblar.cn\",\n    \"index_selection\": \"public\",\n    \"is_alive\": false,\n    \"is_cnc\": false,\n    \"is_distributing_malware\": false,\n    \"is_iot_threat\": false,\n    \"is_mining_pool\": false,\n    \"is_phishing\": false,\n    \"is_storing_phishing\": false,\n    \"last_online_time\": \"2023-07-21 22:30:04\",\n    \"modification_time\": \"2023-07-21 22:30:04\",\n    \"nameserver\": [\n        \"ns1.parkingcrew.net\",\n        \"ns2.parkingcrew.net\"\n    ],\n    \"number_of_offline_malicious_urls_allocated\": 0,\n    \"number_of_online_malicious_urls_allocated\": 0,\n    \"registrant_name\": \"DYNADOTCHINA LLC\",\n    \"resolved_ip\": [\n        {\n            \"ip_addr\": \"185.141.25.242\",\n            \"timestamp\": \"2019-12-19 02:58:26\"\n        },\n        {\n            \"ip_addr\": \"185.53.179.7\",\n            \"timestamp\": \"2018-02-27 07:40:34\"\n        }\n    ],\n    \"status\": [\n        \"clientTransferProhibited\"\n    ],\n    \"tag\": [],\n    \"tld\": \"cn\",\n    \"type\": \"hostname\"\n}",
+                "ignore_errors": true,
+                "operationTitle": "Get Domain Reputation",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "300",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "5aaacae7-589a-4648-b1de-2097a504c68d"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "If Reputation is Found",
+              "description": null,
+              "arguments": {
+                "conditions": [
+                  {
+                    "option": "Yes",
+                    "step_iri": "/api/3/workflow_steps/2df7fec8-6946-4de3-b99a-1a174b779051",
+                    "condition": "{{ vars.steps.Get_Domain_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "step_name": "Maltiverse Reputation Summary"
+                  },
+                  {
+                    "option": "No",
+                    "default": true,
+                    "step_iri": "/api/3/workflow_steps/ace0d94c-c005-4f21-94a0-f927cd2fa8e1",
+                    "step_name": "No Operation"
+                  }
+                ]
+              },
+              "status": null,
+              "top": "435",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/12254cf5-5db7-4b1a-8cb1-3af081924b28",
+              "group": null,
+              "uuid": "336b42e7-c07b-442e-80cb-3f29f5d574fc"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Maltiverse Reputation Summary",
+              "description": null,
+              "arguments": {
+                "params": {
+                  "value": "<table class=\"no-border\">\n    <tr>\n        <th colspan=\"4\" class=\"no-background padding-0\">\n            <div class=\"font-size-11 ng-binding padding-bottom-sm\">\n                <h4 style=\"color: orange;\"\n                    class=\"body-default-bgcolor margin-bottom-0 padding-bottom-md padding-left-md padding-top-md text-align-left\">\n                    Maltiverse Detection Summary</h4>\n            </div>\n        </th>\n    </tr>\n    <tr class=\"solid-border\">\n        <td>\n            <div small class=\"control-label\">Classification</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div>{% if vars.steps.Get_Domain_Reputation.data['classification'] == 'malicious' %}</div>\n                <div class=\"body-default-bgcolor card-number padding-left-md\"\n                    style=\"border-left: 5px solid {{vars.input.params.style_colors.Malicious}};padding: 11px;font-size: 18px !important;\">\n                    {{\"Malicious\"}}</div>\n                <div>{% elif vars.steps.Get_Domain_Reputation.data['classification'] == 'suspicious' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Suspicious}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Suspicious\"}}</div>\n                        <div>{% elif vars.steps.Get_Domain_Reputation.data['classification'] == 'whitelist' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Good}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Whitelist\"}}</div>\n                        <div>{% else %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors['No Reputation Available']}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Neutral\"}}</div>\n                        <div>{% endif %}</div>\n                </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">AS Name</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_Domain_Reputation.data.as_name}}</div>\n            </div>\n        </td>  \n        <td>\n            <div small class=\"control-label\">Domain</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_Domain_Reputation.data.domain}}</div>\n            </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">Registrant Name</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_Domain_Reputation.data.registrant_name}}</div>\n            </div>\n        </td>\n    </tr>\n</table>"
+                },
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "format_richtext",
+                "operationTitle": "Utils: Format as RichText (Markdown)",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "2df7fec8-6946-4de3-b99a-1a174b779051"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "No Operation",
+              "description": null,
+              "arguments": {
+                "params": [],
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "no_op",
+                "operationTitle": "Utils: No Operation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "475",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "ace0d94c-c005-4f21-94a0-f927cd2fa8e1"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Return Output Data",
+              "description": null,
+              "arguments": {
+                "verdict": "{% if vars.steps.Get_Domain_Reputation.data['classification'] == \"malicious\" %}{{\"Malicious\"}}{% elif vars.steps.Get_Domain_Reputation.data['classification'] == \"suspicious\" %}{{\"Suspicious\"}}{% elif vars.steps.Get_Domain_Reputation.data['classification'] == \"whitelist\" %}{{\"Good\"}}{% else %}{{\"No Reputation Available\"}}{% endif %}",
+                "cti_name": "Maltiverse",
+                "cti_score": "{{vars.steps.Get_Domain_Reputation.data['classification']}}",
+                "source_data": "{\"Maltiverse\": {{vars.steps.Get_Domain_Reputation.data}} }",
+                "field_mapping": "",
+                "enrichment_summary": "{{vars.steps.Maltiverse_Reputation_Summary.data['formatted_string']}}"
+              },
+              "status": null,
+              "top": "700",
+              "left": "120",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "df81ec29-0870-44cc-9504-12ae6d4df9d5"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "status": null,
+              "top": "30",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+              "group": null,
+              "uuid": "f81cfa07-ff7e-4fad-963f-3241e46bf71e"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Configuration -> Get IP Reputation",
+              "targetStep": "/api/3/workflow_steps/5aaacae7-589a-4648-b1de-2097a504c68d",
+              "sourceStep": "/api/3/workflow_steps/d73765ad-9083-4c34-9bc7-625493b01d29",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "dc1ce9bb-b5f5-459d-93f1-cccca987ab84"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Get IP Reputation -> If Reputation is Found",
+              "targetStep": "/api/3/workflow_steps/336b42e7-c07b-442e-80cb-3f29f5d574fc",
+              "sourceStep": "/api/3/workflow_steps/5aaacae7-589a-4648-b1de-2097a504c68d",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "1711ddf8-042f-4782-91a1-fad23c82074e"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> Maltiverse Reputation Summary",
+              "targetStep": "/api/3/workflow_steps/2df7fec8-6946-4de3-b99a-1a174b779051",
+              "sourceStep": "/api/3/workflow_steps/336b42e7-c07b-442e-80cb-3f29f5d574fc",
+              "label": "Yes",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "fa37ec5b-2621-49a5-a45c-918ca2714df8"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> No Operation",
+              "targetStep": "/api/3/workflow_steps/ace0d94c-c005-4f21-94a0-f927cd2fa8e1",
+              "sourceStep": "/api/3/workflow_steps/336b42e7-c07b-442e-80cb-3f29f5d574fc",
+              "label": "No",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "68d9f6fc-7c2d-43c6-a219-1ecbc100936d"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Maltiverse Reputation Summary -> Return Output Data",
+              "targetStep": "/api/3/workflow_steps/df81ec29-0870-44cc-9504-12ae6d4df9d5",
+              "sourceStep": "/api/3/workflow_steps/2df7fec8-6946-4de3-b99a-1a174b779051",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "e9d38126-9706-439d-bebb-97044d39083f"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Configuration",
+              "targetStep": "/api/3/workflow_steps/d73765ad-9083-4c34-9bc7-625493b01d29",
+              "sourceStep": "/api/3/workflow_steps/f81cfa07-ff7e-4fad-963f-3241e46bf71e",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "435bf33e-0a9b-4df5-90fb-bd234c702ef0"
+            }
+          ],
+          "groups": [],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "45efa2f5-df22-488f-a69a-c04989e89283",
+          "id": 550,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "Domain_Enrichment"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Get IP Reputation",
+          "aliasName": null,
+          "tag": "#Maltiverse",
+          "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1693905774,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/61595820-5bf7-4e65-bbd8-83184ff0fa55",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Get IP Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "73ce8859-e436-4fa0-8d7c-7ffea28b168f",
+                "params": {
+                  "ip": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_ip_reputation",
+                "operationTitle": "Get IP Reputation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "200",
+              "left": "420",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "7dc40e62-2d51-4a09-a3d2-e1abb965fac0"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "a475069f-e71f-4b39-a78c-0fd28b73fe2e",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "20",
+              "left": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "group": null,
+              "uuid": "61595820-5bf7-4e65-bbd8-83184ff0fa55"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Get IP Reputation",
+              "targetStep": "/api/3/workflow_steps/7dc40e62-2d51-4a09-a3d2-e1abb965fac0",
+              "sourceStep": "/api/3/workflow_steps/61595820-5bf7-4e65-bbd8-83184ff0fa55",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "258b1aa9-5cb9-46e7-8ed8-9e69981abbc2"
+            }
+          ],
+          "groups": [],
+          "priority": null,
+          "uuid": "5fe2be0a-e672-4900-b186-e8332f054912",
+          "id": 551,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "IP > Maltiverse > Enrichment",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [
+            "indicator_value",
+            "style_colors"
+          ],
+          "synchronous": false,
+          "lastModifyDate": 1693992750,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/29424db6-6b0a-407f-80ed-760936ebe1ed",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Configuration",
+              "description": null,
+              "arguments": {
+                "good_score": "whitelist",
+                "nuetral_score": "neutral",
+                "useMockOutput": "{{globalVars.Demo_mode}}",
+                "indicator_value": "{{vars.input.params['indicator_value']}}",
+                "malicious_score": "malicious",
+                "suspicious_score": "suspicious"
+              },
+              "status": null,
+              "top": "165",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "c14fcefd-03ac-4ab5-b56e-6273d1f422ae"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Get IP Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "73ce8859-e436-4fa0-8d7c-7ffea28b168f",
+                "params": {
+                  "ip": "{{vars.indicator_value}}"
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_ip_reputation",
+                "mock_result": "{\n    \"address\": \"90200, Beregovo str. Secheni 4, Ukraine\",\n    \"as_name\": \"AS35800 EcotradeInform Ltd\",\n    \"asn_cidr\": \"194.88.152.0/23\",\n    \"asn_country_code\": \"UA\",\n    \"asn_date\": \"2005-10-25 00:00:00\",\n    \"asn_registry\": \"ripencc\",\n    \"blacklist\": [\n        {\n            \"count\": 1,\n            \"description\": \"Malicious Host\",\n            \"first_seen\": \"2023-08-19 00:00:00\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2023-08-19 00:00:00\",\n            \"source\": \"HoneyDB\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Bruteforce login attacker\",\n            \"first_seen\": \"2023-01-17 02:06:01\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2023-01-18 02:06:32\",\n            \"source\": \"Blocklist.de\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"HTTP Attacker\",\n            \"first_seen\": \"2023-01-17 01:51:33\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2023-01-18 01:52:12\",\n            \"source\": \"Blocklist.de\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"HTTP Spammer\",\n            \"first_seen\": \"2023-01-03 11:53:59\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2023-08-26 01:50:43\",\n            \"source\": \"StopForumSpam.com\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Bruteforce\",\n            \"first_seen\": \"2022-11-04 11:07:20\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2022-11-04 11:07:20\",\n            \"source\": \"Maltiverse\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"HTTP Scrapper\",\n            \"first_seen\": \"2022-11-03 20:37:05\",\n            \"labels\": [\n                \"anomalous-activity\"\n            ],\n            \"last_seen\": \"2022-11-05 01:37:09\",\n            \"source\": \"Maltiverse\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Hacking\",\n            \"first_seen\": \"2022-11-03 16:35:34\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2022-11-05 02:36:17\",\n            \"source\": \"Maltiverse\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Mail Spammer\",\n            \"first_seen\": \"2022-11-03 15:54:57\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2022-11-04 20:00:00\",\n            \"source\": \"Maltiverse\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"HTTP Attacker\",\n            \"first_seen\": \"2022-11-03 14:55:46\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2022-11-05 02:36:17\",\n            \"source\": \"Maltiverse\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"HTTP Spammer\",\n            \"first_seen\": \"2022-11-05 03:00:30\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2023-01-23 14:39:21\",\n            \"source\": \"Sblam\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Mail Spammer\",\n            \"first_seen\": \"2022-11-05 03:00:34\",\n            \"last_seen\": \"2023-01-03 07:25:33\",\n            \"source\": \"Barracuda\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Mail Spammer\",\n            \"first_seen\": \"2023-01-03 07:25:33\",\n            \"last_seen\": \"2023-01-03 07:25:33\",\n            \"source\": \"Abuseat.org\"\n        }\n    ],\n    \"cidr\": [\n        \"194.88.152.0/23\"\n    ],\n    \"city\": \"Berehove\",\n    \"classification\": \"malicious\",\n    \"country_code\": \"UA\",\n    \"creation_time\": \"2022-11-05 03:00:30\",\n    \"ip_addr\": \"194.88.152.40\",\n    \"is_cdn\": false,\n    \"is_cnc\": false,\n    \"is_distributing_malware\": false,\n    \"is_hosting\": false,\n    \"is_iot_threat\": false,\n    \"is_known_attacker\": false,\n    \"is_known_scanner\": false,\n    \"is_mining_pool\": false,\n    \"is_open_proxy\": false,\n    \"is_sinkhole\": false,\n    \"is_tor_node\": false,\n    \"is_vpn_node\": false,\n    \"last_updated\": \"2018-11-22 09:16:08\",\n    \"location\": {\n        \"lat\": 48.2056,\n        \"lon\": 22.6442\n    },\n    \"modification_time\": \"2023-08-26 01:50:43\",\n    \"number_of_blacklisted_domains_resolving\": 0,\n    \"number_of_domains_resolving\": 0,\n    \"number_of_offline_malicious_urls_allocated\": 0,\n    \"number_of_online_malicious_urls_allocated\": 0,\n    \"number_of_whitelisted_domains_resolving\": 0,\n    \"tag\": [\n        \"bot\",\n        \"abuse\",\n        \"attacker\",\n        \"login\",\n        \"bruteforce\",\n        \"joomla\",\n        \"wordpress\",\n        \"apache\",\n        \"ddos\",\n        \"rfi\"\n    ],\n    \"type\": \"ip\"\n}",
+                "ignore_errors": true,
+                "operationTitle": "Get IP Reputation",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "300",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "00e5c903-334d-40be-95a2-c2d6dde84606"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "If Reputation is Found",
+              "description": null,
+              "arguments": {
+                "conditions": [
+                  {
+                    "option": "Yes",
+                    "step_iri": "/api/3/workflow_steps/51746771-7195-4fe9-a8c9-944cef338452",
+                    "condition": "{{ vars.steps.Get_IP_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "step_name": "Maltiverse Reputation Summary"
+                  },
+                  {
+                    "option": "No",
+                    "default": true,
+                    "step_iri": "/api/3/workflow_steps/026c5507-0239-4869-b235-c3978ed15239",
+                    "step_name": "No Operation"
+                  }
+                ]
+              },
+              "status": null,
+              "top": "435",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/12254cf5-5db7-4b1a-8cb1-3af081924b28",
+              "group": null,
+              "uuid": "dba7b648-9028-481e-8c9b-4dd03dc634d1"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Maltiverse Reputation Summary",
+              "description": null,
+              "arguments": {
+                "params": {
+                  "value": "<table class=\"no-border\">\n    <tr>\n        <th colspan=\"4\" class=\"no-background padding-0\">\n            <div class=\"font-size-11 ng-binding padding-bottom-sm\">\n                <h4 style=\"color: orange;\"\n                    class=\"body-default-bgcolor margin-bottom-0 padding-bottom-md padding-left-md padding-top-md text-align-left\">\n                    Maltiverse Detection Summary</h4>\n            </div>\n        </th>\n    </tr>\n    <tr class=\"solid-border\">\n        <td>\n            <div small class=\"control-label\">Classification</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div>{% if vars.steps.Get_IP_Reputation.data['classification'] == 'malicious' %}</div>\n                <div class=\"body-default-bgcolor card-number padding-left-md\"\n                    style=\"border-left: 5px solid {{vars.input.params.style_colors.Malicious}};padding: 11px;font-size: 18px !important;\">\n                    {{\"Malicious\"}}</div>\n                <div>{% elif vars.steps.Get_IP_Reputation.data['classification'] == 'suspicious' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Suspicious}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Suspicious\"}}</div>\n                        <div>{% elif vars.steps.Get_IP_Reputation.data['classification'] == 'whitelist' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Good}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Whitelist\"}}</div>\n                        <div>{% else %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors['No Reputation Available']}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Neutral\"}}</div>\n                        <div>{% endif %}</div>\n                </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">IP CIDR</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_IP_Reputation.data.ip_addr}}</div>\n            </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">AS Name</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_IP_Reputation.data.as_name}}</div>\n            </div>\n        </td>  \n        <td>\n            <div small class=\"control-label\">ASN CIDR</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_IP_Reputation.data.asn_cidr}}</div>\n            </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">ASN Registry</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_IP_Reputation.data.asn_registry}}</div>\n            </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">ASN Country Code</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_IP_Reputation.data.asn_country_code}}</div>\n            </div>\n        </td>\n    </tr>\n</table>"
+                },
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "format_richtext",
+                "operationTitle": "Utils: Format as RichText (Markdown)",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "51746771-7195-4fe9-a8c9-944cef338452"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "No Operation",
+              "description": null,
+              "arguments": {
+                "params": [],
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "no_op",
+                "operationTitle": "Utils: No Operation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "475",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "026c5507-0239-4869-b235-c3978ed15239"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Return Output Data",
+              "description": null,
+              "arguments": {
+                "verdict": "{% if vars.steps.Get_IP_Reputation.data['classification'] == \"malicious\" %}{{\"Malicious\"}}{% elif vars.steps.Get_IP_Reputation.data['classification'] == \"suspicious\" %}{{\"Suspicious\"}}{% elif vars.steps.Get_IP_Reputation.data['classification'] == \"whitelist\" %}{{\"Good\"}}{% else %}{{\"No Reputation Available\"}}{% endif %}",
+                "cti_name": "Maltiverse",
+                "cti_score": "{{vars.steps.Get_IP_Reputation.data['classification']}}",
+                "source_data": "{\"Maltiverse\": {{vars.steps.Get_IP_Reputation.data}} }",
+                "field_mapping": "{\"as_name\": \"{{vars.steps.Get_IP_Reputation.data.as_name}}\", \"ip_addr\": \"{{vars.steps.Get_IP_Reputation.data.ip_addr}}\", \"asn_registry\": \"{{vars.steps.Get_IP_Reputation.data.asn_registry}}\", \"asn_country_code\": \"{{vars.steps.Get_IP_Reputation.data.asn_country_code}}\", \"address\": \"{{vars.steps.Get_IP_Reputation.data.address}}\" }",
+                "enrichment_summary": "{{vars.steps.Maltiverse_Reputation_Summary.data['formatted_string']}}"
+              },
+              "status": null,
+              "top": "700",
+              "left": "120",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "18a2bebc-7270-41bd-9c85-ad8f1956283f"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "status": null,
+              "top": "30",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+              "group": null,
+              "uuid": "29424db6-6b0a-407f-80ed-760936ebe1ed"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Configuration -> Get IP Reputation",
+              "targetStep": "/api/3/workflow_steps/00e5c903-334d-40be-95a2-c2d6dde84606",
+              "sourceStep": "/api/3/workflow_steps/c14fcefd-03ac-4ab5-b56e-6273d1f422ae",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "1c59f59c-e4d5-4619-82e5-5344c4dd3fbf"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Get IP Reputation -> If Reputation is Found",
+              "targetStep": "/api/3/workflow_steps/dba7b648-9028-481e-8c9b-4dd03dc634d1",
+              "sourceStep": "/api/3/workflow_steps/00e5c903-334d-40be-95a2-c2d6dde84606",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "992740e2-e3bb-4a30-9c6a-cfdc4615694f"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> Maltiverse Reputation Summary",
+              "targetStep": "/api/3/workflow_steps/51746771-7195-4fe9-a8c9-944cef338452",
+              "sourceStep": "/api/3/workflow_steps/dba7b648-9028-481e-8c9b-4dd03dc634d1",
+              "label": "Yes",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "91d487cd-4ea2-4c75-bdcc-4de7bdd2c7cd"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> No Operation",
+              "targetStep": "/api/3/workflow_steps/026c5507-0239-4869-b235-c3978ed15239",
+              "sourceStep": "/api/3/workflow_steps/dba7b648-9028-481e-8c9b-4dd03dc634d1",
+              "label": "No",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "2dcf48d5-b92e-4ca3-a349-888705446e26"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Maltiverse Reputation Summary -> Return Output Data",
+              "targetStep": "/api/3/workflow_steps/18a2bebc-7270-41bd-9c85-ad8f1956283f",
+              "sourceStep": "/api/3/workflow_steps/51746771-7195-4fe9-a8c9-944cef338452",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "b2c07b9b-1b1e-4b0f-a9f8-88c09be65582"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Configuration",
+              "targetStep": "/api/3/workflow_steps/c14fcefd-03ac-4ab5-b56e-6273d1f422ae",
+              "sourceStep": "/api/3/workflow_steps/29424db6-6b0a-407f-80ed-760936ebe1ed",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "9bf7009c-1ad1-475a-ba56-ed9b102e21c9"
+            }
+          ],
+          "groups": [],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "c616dcdd-212a-43ca-835e-5aa57543c8b0",
+          "id": 552,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "IP_Enrichment"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Get URL Reputation",
+          "aliasName": null,
+          "tag": "#Maltiverse",
+          "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1693904999,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/742cdc70-5920-4d1d-a605-3abee13215d2",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Get URL Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "''",
+                "params": {
+                  "urlhash": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_url_reputation",
+                "operationTitle": "Get URL Reputation"
+              },
+              "status": null,
+              "top": "140",
+              "left": "360",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "6335944e-41f7-426e-a9fb-20f29b24410c"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "51872bc5-fd89-47e8-b3d2-c854f037b044",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "20",
+              "left": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "group": null,
+              "uuid": "742cdc70-5920-4d1d-a605-3abee13215d2"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Get URL Reputation",
+              "targetStep": "/api/3/workflow_steps/6335944e-41f7-426e-a9fb-20f29b24410c",
+              "sourceStep": "/api/3/workflow_steps/742cdc70-5920-4d1d-a605-3abee13215d2",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "ba43bdb8-7395-4c5a-a1b1-e332be120e37"
+            }
+          ],
+          "groups": [],
+          "priority": null,
+          "uuid": "e8e77d73-44ca-4969-8b35-dd5c91319e0d",
+          "id": 553,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "Get Domain Reputation",
+          "aliasName": null,
+          "tag": "#Maltiverse",
+          "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
+          "isActive": false,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [],
+          "synchronous": false,
+          "lastModifyDate": 1693992884,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/50ffa41a-463f-4cf4-9d11-1c201905fc58",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Get Domain Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "f52dec00-3d56-40c0-913e-0689a2dfb998",
+                "params": {
+                  "domain": ""
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_domain_reputation",
+                "operationTitle": "Get Domain Reputation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "140",
+              "left": "480",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "5b270d63-86a5-4c68-8329-6f0f6bd36eb6"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "route": "c7771d9b-0d61-4645-a4af-676c2839eebd",
+                "resources": [
+                  "alerts"
+                ],
+                "inputVariables": [],
+                "step_variables": {
+                  "input": {
+                    "params": [],
+                    "records": "{{vars.input.records}}"
+                  }
+                },
+                "displayConditions": {
+                  "alerts": {
+                    "sort": [],
+                    "limit": 30,
+                    "logic": "AND",
+                    "filters": []
+                  }
+                },
+                "executeButtonText": "Execute",
+                "noRecordExecution": true,
+                "singleRecordExecution": false
+              },
+              "status": null,
+              "top": "20",
+              "left": "20",
+              "stepType": "/api/3/workflow_step_types/f414d039-bb0d-4e59-9c39-a8f1e880b18a",
+              "group": null,
+              "uuid": "50ffa41a-463f-4cf4-9d11-1c201905fc58"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Get Domain Reputation",
+              "targetStep": "/api/3/workflow_steps/5b270d63-86a5-4c68-8329-6f0f6bd36eb6",
+              "sourceStep": "/api/3/workflow_steps/50ffa41a-463f-4cf4-9d11-1c201905fc58",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "b157c7ce-6498-4333-b910-efc0790e8cce"
+            }
+          ],
+          "groups": [],
+          "priority": null,
+          "uuid": "eeacfaa0-e3f0-4c62-bec3-a8eeb5cfc462",
+          "id": 554,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "Maltiverse",
+            "maltiverse"
+          ]
+        },
+        {
+          "@type": "Workflow",
+          "triggerLimit": null,
+          "name": "URL > Maltiverse > Enrichment",
+          "aliasName": null,
+          "tag": null,
+          "description": null,
+          "isActive": true,
+          "debug": false,
+          "singleRecordExecution": false,
+          "remoteExecutableFlag": false,
+          "parameters": [
+            "indicator_value",
+            "style_colors"
+          ],
+          "synchronous": false,
+          "lastModifyDate": 1693993915,
+          "collection": "/api/3/workflow_collections/84bca005-d6d7-4a2d-b72e-5e126c2d6a5d",
+          "versions": [],
+          "triggerStep": "/api/3/workflow_steps/0cf7115c-ffb5-4d7e-b805-42fe6c09d836",
+          "steps": [
+            {
+              "@type": "WorkflowStep",
+              "name": "Configuration",
+              "description": null,
+              "arguments": {
+                "useMockOutput": "{{globalVars.Demo_mode}}",
+                "indicator_value": "{{vars.input.params['indicator_value']}}"
+              },
+              "status": null,
+              "top": "165",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "59f9e241-3862-4c3c-80cb-7add15266eea"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Get URL Reputation",
+              "description": null,
+              "arguments": {
+                "name": "Maltiverse",
+                "config": "73ce8859-e436-4fa0-8d7c-7ffea28b168f",
+                "params": {
+                  "urlhash": "{{vars.input.params['indicator_value']}}"
+                },
+                "version": "1.0.0",
+                "connector": "maltiverse",
+                "operation": "get_url_reputation",
+                "mock_result": "{\n    \"blacklist\": [\n        {\n            \"count\": 1,\n            \"description\": \"Phishing Other\",\n            \"first_seen\": \"2020-03-22 08:53:10\",\n            \"last_seen\": \"2020-03-22 08:53:10\",\n            \"source\": \"Phishtank\"\n        },\n        {\n            \"count\": 1,\n            \"description\": \"Social Engineering\",\n            \"first_seen\": \"2020-03-22 08:53:10\",\n            \"labels\": [\n                \"malicious-activity\"\n            ],\n            \"last_seen\": \"2020-03-22 08:53:10\",\n            \"source\": \"Google Safebrowsing\"\n        }\n    ],\n    \"classification\": \"malicious\",\n    \"creation_time\": \"2020-03-22 08:53:10\",\n    \"domain\": \"alleom.com\",\n    \"hostname\": \"alleom.com\",\n    \"modification_time\": \"2020-03-22 08:53:10\",\n    \"tag\": [\n        \"phishing\"\n    ],\n    \"tld\": \"com\",\n    \"type\": \"url\",\n    \"url\": \"https://alleom.com/weqmo\",\n    \"urlchecksum\": \"7b0ef6e5d95e2ee2c2602135c39f3fe09fe8f1eee7f5769266a0dbe718696ec3\"\n}",
+                "ignore_errors": true,
+                "operationTitle": "Get URL Reputation",
+                "pickFromTenant": false,
+                "step_variables": []
+              },
+              "status": null,
+              "top": "300",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/0bfed618-0316-11e7-93ae-92361f002671",
+              "group": null,
+              "uuid": "df5a1a47-9aa5-4360-909a-422f1ae0f742"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "If Reputation is Found",
+              "description": null,
+              "arguments": {
+                "conditions": [
+                  {
+                    "option": "Yes",
+                    "step_iri": "/api/3/workflow_steps/757f0c3c-1982-480a-a66c-fa45a276391e",
+                    "condition": "{{ vars.steps.Get_URL_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "step_name": "Maltiverse Reputation Summary"
+                  },
+                  {
+                    "option": "No",
+                    "default": true,
+                    "step_iri": "/api/3/workflow_steps/d6049730-fe82-4b51-b9b0-de1d2267a6dd",
+                    "step_name": "No Operation"
+                  }
+                ]
+              },
+              "status": null,
+              "top": "435",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/12254cf5-5db7-4b1a-8cb1-3af081924b28",
+              "group": null,
+              "uuid": "770e4e56-1916-4818-a4d7-c9bc3d97753a"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Maltiverse Reputation Summary",
+              "description": null,
+              "arguments": {
+                "params": {
+                  "value": "<table class=\"no-border\">\n    <tr>\n        <th colspan=\"4\" class=\"no-background padding-0\">\n            <div class=\"font-size-11 ng-binding padding-bottom-sm\">\n                <h4 style=\"color: orange;\"\n                    class=\"body-default-bgcolor margin-bottom-0 padding-bottom-md padding-left-md padding-top-md text-align-left\">\n                    Maltiverse Detection Summary</h4>\n            </div>\n        </th>\n    </tr>\n    <tr class=\"solid-border\">\n        <td>\n            <div small class=\"control-label\">Classification</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div>{% if vars.steps.Get_URL_Reputation.data['classification'] == 'malicious' %}</div>\n                <div class=\"body-default-bgcolor card-number padding-left-md\"\n                    style=\"border-left: 5px solid {{vars.input.params.style_colors.Malicious}};padding: 11px;font-size: 18px !important;\">\n                    {{\"Malicious\"}}</div>\n                <div>{% elif vars.steps.Get_URL_Reputation.data['classification'] == 'suspicious' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Suspicious}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Suspicious\"}}</div>\n                        <div>{% elif vars.steps.Get_URL_Reputation.data['classification'] == 'whitelist' %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors.Good}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Whitelist\"}}</div>\n                        <div>{% else %}</div>\n                        <div class=\"body-default-bgcolor card-number padding-left-md\"\n                            style=\"border-left: 5px solid {{vars.input.params.style_colors['No Reputation Available']}};padding: 11px;font-size: 18px !important;\">\n                            {{\"Neutral\"}}</div>\n                        <div>{% endif %}</div>\n                </div>\n        </td>\n        <td>\n            <div small class=\"control-label\">Domain</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_URL_Reputation.data.domain}}</div>\n            </div>\n        </td>  \n        <td>\n            <div small class=\"control-label\">URL</div>\n            <div class=\"card-container-body margin-left-0\">\n                <div class=\"body-default-bgcolor card-number padding-left-md\" \n                style=\"border-left: 5px solid;padding: 11px;font-size: 18px !important;\">\n                    {{vars.steps.Get_URL_Reputation.data.url}}</div>\n            </div>\n        </td>\n    </tr>\n</table>"
+                },
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "format_richtext",
+                "operationTitle": "Utils: Format as RichText (Markdown)",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "125",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "757f0c3c-1982-480a-a66c-fa45a276391e"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "No Operation",
+              "description": null,
+              "arguments": {
+                "params": [],
+                "version": "3.2.3",
+                "connector": "cyops_utilities",
+                "operation": "no_op",
+                "operationTitle": "Utils: No Operation",
+                "step_variables": []
+              },
+              "status": null,
+              "top": "570",
+              "left": "475",
+              "stepType": "/api/3/workflow_step_types/0109f35d-090b-4a2b-bd8a-94cbc3508562",
+              "group": null,
+              "uuid": "d6049730-fe82-4b51-b9b0-de1d2267a6dd"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Return Output Data",
+              "description": null,
+              "arguments": {
+                "verdict": "{% if vars.steps.Get_URL_Reputation.data['classification'] == \"malicious\" %}{{\"Malicious\"}}{% elif vars.steps.Get_URL_Reputation.data['classification'] == \"suspicious\" %}{{\"Suspicious\"}}{% elif vars.steps.Get_URL_Reputation.data['classification'] == \"whitelist\" %}{{\"Good\"}}{% else %}{{\"No Reputation Available\"}}{% endif %}",
+                "cti_name": "Maltiverse",
+                "cti_score": "{{vars.steps.Get_URL_Reputation.data['classification']}}",
+                "source_data": "{\"Maltiverse\": {{vars.steps.Get_URL_Reputation.data}} }",
+                "field_mapping": "{\"domain\": \"{{vars.steps.Get_URL_Reputation.data.domain}}\", \"hostname\": \"{{vars.steps.Get_URL_Reputation.data.hostname}}\", \"url\": \"{{vars.steps.Get_URL_Reputation.data.url}}\" }",
+                "enrichment_summary": "{{vars.steps.Maltiverse_Reputation_Summary.data['formatted_string']}}"
+              },
+              "status": null,
+              "top": "700",
+              "left": "120",
+              "stepType": "/api/3/workflow_step_types/04d0cf46-b6a8-42c4-8683-60a7eaa69e8f",
+              "group": null,
+              "uuid": "22bac8d1-5a32-4c21-905e-faf8f6a7d422"
+            },
+            {
+              "@type": "WorkflowStep",
+              "name": "Start",
+              "description": null,
+              "arguments": {
+                "step_variables": {
+                  "input": {
+                    "params": []
+                  }
+                }
+              },
+              "status": null,
+              "top": "30",
+              "left": "300",
+              "stepType": "/api/3/workflow_step_types/b348f017-9a94-471f-87f8-ce88b6a7ad62",
+              "group": null,
+              "uuid": "0cf7115c-ffb5-4d7e-b805-42fe6c09d836"
+            }
+          ],
+          "routes": [
+            {
+              "@type": "WorkflowRoute",
+              "name": "Configuration -> Get IP Reputation",
+              "targetStep": "/api/3/workflow_steps/df5a1a47-9aa5-4360-909a-422f1ae0f742",
+              "sourceStep": "/api/3/workflow_steps/59f9e241-3862-4c3c-80cb-7add15266eea",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "95635b02-6643-4a87-af0c-5b9d75284121"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Get IP Reputation -> If Reputation is Found",
+              "targetStep": "/api/3/workflow_steps/770e4e56-1916-4818-a4d7-c9bc3d97753a",
+              "sourceStep": "/api/3/workflow_steps/df5a1a47-9aa5-4360-909a-422f1ae0f742",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "fecb6b43-3c53-49fc-9996-f6b2572550e2"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> Maltiverse Reputation Summary",
+              "targetStep": "/api/3/workflow_steps/757f0c3c-1982-480a-a66c-fa45a276391e",
+              "sourceStep": "/api/3/workflow_steps/770e4e56-1916-4818-a4d7-c9bc3d97753a",
+              "label": "Yes",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "91c3ba99-e55a-4e09-81c8-8ef16f3cfb15"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "If Reputation is Found -> No Operation",
+              "targetStep": "/api/3/workflow_steps/d6049730-fe82-4b51-b9b0-de1d2267a6dd",
+              "sourceStep": "/api/3/workflow_steps/770e4e56-1916-4818-a4d7-c9bc3d97753a",
+              "label": "No",
+              "isExecuted": false,
+              "group": null,
+              "uuid": "06bbc8d5-51bb-4168-8cf4-9bbb5c99017d"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Maltiverse Reputation Summary -> Return Output Data",
+              "targetStep": "/api/3/workflow_steps/22bac8d1-5a32-4c21-905e-faf8f6a7d422",
+              "sourceStep": "/api/3/workflow_steps/757f0c3c-1982-480a-a66c-fa45a276391e",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "9be87c8b-1bf8-40fb-ab93-0da5fe880121"
+            },
+            {
+              "@type": "WorkflowRoute",
+              "name": "Start -> Configuration",
+              "targetStep": "/api/3/workflow_steps/59f9e241-3862-4c3c-80cb-7add15266eea",
+              "sourceStep": "/api/3/workflow_steps/0cf7115c-ffb5-4d7e-b805-42fe6c09d836",
+              "label": null,
+              "isExecuted": false,
+              "group": null,
+              "uuid": "aa499251-822e-4e31-9313-1fcab376e6a1"
+            }
+          ],
+          "groups": [],
+          "priority": "/api/3/picklists/2b563c61-ae2c-41c0-a85a-c9709585e3f2",
+          "uuid": "f33d8174-76d5-43dc-8788-128c62763361",
+          "id": 555,
+          "owners": [],
+          "isPrivate": false,
+          "deletedAt": null,
+          "importedBy": [],
+          "recordTags": [
+            "URL_Enrichment"
+          ]
+        }
+      ]
+    }
+  ],
+  "macros": [
+    {
+      "name": "Demo_mode",
+      "value": "false",
+      "default_value": "false"
+    }
+  ],
+  "exported_tags": [
+    "Maltiverse",
+    "maltiverse",
+    "FileHash_Enrichment",
+    "Domain_Enrichment",
+    "IP_Enrichment",
+    "URL_Enrichment"
+  ]
+}

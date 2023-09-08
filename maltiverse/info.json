@@ -1,0 +1,260 @@
+{
+    "name": "maltiverse",
+    "label": "Maltiverse",
+    "version": "1.0.0",
+    "description": "Maltiverse Threat Intelligence Feeds can be integrated with your security stack to provide improvement in terms of detections and protection capabilities from different points of view. You can also upload an deploy your own Threat Intelligence!",
+    "publisher": "Fortinet",
+    "cs_approved": true,
+    "cs_compatible": true,
+    "category": "Threat Intelligence",
+    "icon_small_name": "small.png",
+    "icon_large_name": "large.png",
+    "tags": [
+      "IP_Enrichment",
+      "FileHash_Enrichment",
+      "URL_Enrichment",
+      "Domain_Enrichment",
+      "File_Enrichment"
+    ],
+    "help_online": "",
+    "configuration": {
+        "fields": [
+          {
+            "title": "Server",
+            "description": "Specify the server URL of the Maltiverse server to which you will connect and perform the automated operations.",
+            "required": true,
+            "editable": true,
+            "visible": true,
+            "type": "text",
+            "name": "server_url",
+            "value": "https://api.maltiverse.com"
+          },
+          {
+            "title": "API Key",
+            "description": "Specify the API key that is configured for your account to access the Maltiverse server.",
+            "required": true,
+            "editable": true,
+            "visible": true,
+            "type": "password",
+            "name": "api_key"
+          },
+          {
+            "title": "Verify SSL",
+            "name": "verify_ssl",
+            "required": false,
+            "editable": true,
+            "visible": true,
+            "type": "checkbox",
+            "value": true,
+            "tooltip": "Specifies whether the SSL certificate for the server is to be verified or not. By default, this option is set as True.",
+            "description": "Specifies whether the SSL certificate for the server is to be verified or not. By default, this option is set as True."
+          }
+        ]
+      },
+    "operations": [
+        {
+            "operation": "get_ip_reputation",
+            "title": "Get IP Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
+            "category": "investigation",
+            "annotation": "get_ip_reputation",
+            "output_schema": {
+                "address": "",
+                "as_name": "",
+                "asn_cidr": "",
+                "asn_country_code": "",
+                "asn_date": "",
+                "asn_registry": "",
+                "cidr": [],
+                "classification": "",
+                "country_code": "",
+                "creation_time": "",
+                "email": [],
+                "ip_addr": "",
+                "is_cdn": "",
+                "is_cnc": "",
+                "is_distributing_malware": "",
+                "is_hosting": "",
+                "is_iot_threat": "",
+                "is_known_attacker": "",
+                "is_known_scanner": "",
+                "is_mining_pool": "",
+                "is_open_proxy": "",
+                "is_sinkhole": "",
+                "is_tor_node": "",
+                "is_vpn_node": "",
+                "location": {
+                    "lat": "",
+                    "lon": ""
+                },
+                "modification_time": "",
+                "number_of_blacklisted_domains_resolving":"",
+                "number_of_domains_resolving": "",
+                "number_of_offline_malicious_urls_allocated": "",
+                "number_of_online_malicious_urls_allocated": "",
+                "number_of_whitelisted_domains_resolving": "",
+                "registrant_name": "",
+                "type": ""
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "IP",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "ip",
+                "description": "Specify the IP address for which you want to retrieve a Maltiverse reputation."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_domain_reputation",
+            "title": "Get Domain Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
+            "category": "investigation",
+            "annotation": "get_domain_reputation",
+            "output_schema": {
+                "as_name": "",
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "dnssec": [],
+                "domain": "",
+                "domain_consonants": "",
+                "domain_lenght": "",
+                "email": [],
+                "entropy":"",
+                "hostname": "",
+                "index_selection": "",
+                "is_alive": "",
+                "is_cnc": "",
+                "is_distributing_malware": "",
+                "is_iot_threat": "",
+                "is_mining_pool": "",
+                "is_phishing": "",
+                "is_storing_phishing": "",
+                "last_online_time": "",
+                "modification_time": "",
+                "nameserver": [],
+                "number_of_offline_malicious_urls_allocated": "",
+                "number_of_online_malicious_urls_allocated": "",
+                "registrant_name": "",
+                "resolved_ip": [
+                    {
+                        "ip_addr": "",
+                        "timestamp": ""
+                    }
+                ],
+                "status": [],
+                "tag": [],
+                "tld": "",
+                "type": ""
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "Domain",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "domain",
+                "description": "Specify the Domain for which you want to retrieve a Maltiverse reputation."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_url_reputation",
+            "title": "Get URL Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
+            "category": "investigation",
+            "annotation": "get_url_reputation",
+            "output_schema": {
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "domain": "",
+                "hostname": "",
+                "modification_time": "",
+                "tag": [],
+                "tld": "",
+                "type": "",
+                "url": "",
+                "urlchecksum": ""
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "URL Sha256 Hash",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "urlhash",
+                "description": "Specify the URL sha256 hash for which you want to retrieve a Maltiverse reputation."
+              }
+              
+            ]
+        },
+        {
+            "operation": "get_file_reputation",
+            "title": "Get File Reputation",
+            "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
+            "category": "investigation",
+            "annotation": "get_file_reputation",
+            "output_schema": {
+                "blacklist": [
+                    {
+                        "count": "",
+                        "description": "",
+                        "first_seen": "",
+                        "labels": [],
+                        "last_seen": "",
+                        "source": ""
+                    }
+                ],
+                "classification": "",
+                "creation_time": "",
+                "filename": [],
+                "filetype": "",
+                "md5": "",
+                "modification_time": "",
+                "sha1": "",
+                "sha256": "",
+                "type": ""
+            },
+            "enabled": true,
+            "parameters": [
+              {
+                "title": "File Hash",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "text",
+                "name": "filehash",
+                "description": "Specify the File Hash for which you want to retrieve a Maltiverse reputation."
+              }
+            ]
+        }
+    ]
+  }

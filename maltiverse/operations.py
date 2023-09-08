@@ -15,7 +15,7 @@ class Maltiverse(object):
         self.server_url = config.get('server_url').strip()
         self.api_key = config.get('api_key')
         self.headers = {'accept': 'application/json', 'Authorization': 'Bearer {}'.format(self.api_key)}
-        if not self.server_url.startswith('https://'):
+        if not self.server_url.startswith('https://') and not self.server_url.startswith('http://'):
             self.server_url = 'https://{0}'.format(self.server_url)
         if self.server_url.endswith('/'):
             self.server_url = self.server_url[:-1]

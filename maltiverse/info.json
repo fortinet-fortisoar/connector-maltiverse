@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Maltiverse Threat Intelligence Feeds can be integrated with your security stack to provide improvement in terms of detections and protection capabilities from different points of view. You can also upload an deploy your own Threat Intelligence!",
     "publisher": "Fortinet",
-    "cs_approved": false,
+    "cs_approved": true,
     "cs_compatible": true,
     "category": "Threat Intelligence",
     "icon_small_name": "small.png",
@@ -57,7 +57,6 @@
             "title": "Get IP Reputation",
             "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
             "category": "investigation",
-            "api_output_schema": "get_output_schema_ip",
             "annotation": "get_ip_reputation",
             "output_schema": {
                 "address": "",
@@ -116,7 +115,6 @@
             "title": "Get Domain Reputation",
             "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
             "category": "investigation",
-            "api_output_schema": "get_output_schema_domain",
             "annotation": "get_domain_reputation",
             "output_schema": {
                 "as_name": "",
@@ -182,7 +180,6 @@
             "title": "Get URL Reputation",
             "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
             "category": "investigation",
-            "api_output_schema": "get_output_schema_url",
             "annotation": "get_url_reputation",
             "output_schema": {
                 "blacklist": [
@@ -224,7 +221,6 @@
             "title": "Get File Reputation",
             "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
             "category": "investigation",
-            "api_output_schema": "get_output_schema_file",
             "annotation": "get_file_reputation",
             "output_schema": {
                 "blacklist": [

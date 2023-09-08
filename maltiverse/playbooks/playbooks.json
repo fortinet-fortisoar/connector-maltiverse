@@ -154,7 +154,7 @@
                 "cti_name": "Maltiverse",
                 "cti_score": "{{vars.steps.Get_File_Reputation.data['classification']}}",
                 "source_data": "{\"Maltiverse\": {{vars.steps.Get_File_Reputation.data}} }",
-                "field_mapping": "{\"filetype\": \"{{vars.steps.Get_File_Reputation.data.filetype}}\", \"md5\": \"{{vars.steps.Get_File_Reputation.data.md5}}\", \"sha1\": \"{{vars.steps.Get_File_Reputation.data.sha1}}\", \"sha256\": \"{{vars.steps.Get_File_Reputation.data.sha256}}\", \"type\": \"{{vars.steps.Get_File_Reputation.data.type}}\"  }",
+                "field_mapping": "{\"filetype\": \"{{vars.steps.Get_File_Reputation.data.filetype}}\", \"filehashMD5\": \"{{vars.steps.Get_File_Reputation.data.md5}}\", \"filehashSHA1\": \"{{vars.steps.Get_File_Reputation.data.sha1}}\", \"filehashSHA256\": \"{{vars.steps.Get_File_Reputation.data.sha256}}\", \"type\": \"{{vars.steps.Get_File_Reputation.data.type}}\"  }",
                 "enrichment_summary": "{{vars.steps.Maltiverse_Reputation_Summary.data['formatted_string']}}"
               },
               "status": null,

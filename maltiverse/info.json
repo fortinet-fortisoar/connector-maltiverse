@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "description": "Maltiverse Threat Intelligence Feeds can be integrated with your security stack to provide improvement in terms of detections and protection capabilities from different points of view. You can also upload an deploy your own Threat Intelligence!",
     "publisher": "Fortinet",
-    "cs_approved": true,
+    "cs_approved": false,
     "cs_compatible": true,
     "category": "Threat Intelligence",
     "icon_small_name": "small.png",

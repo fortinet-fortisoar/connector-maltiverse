@@ -4,6 +4,8 @@
   FORTINET CONFIDENTIAL & FORTINET PROPRIETARY SOURCE CODE
   Copyright end """
 import requests
+import hashlib
+import constants
 from connectors.core.connector import get_logger, ConnectorError
 from requests import exceptions as req_exceptions
 logger = get_logger('maltiverse')
@@ -27,18 +29,21 @@ class Maltiverse(object):
         try:
             logger.debug('Making a request with {0} - {1}'.format(method, url))
             response = requests.request(method, url, headers=self.headers)
+            json_resp = response.json()
             if health_check and response.status_code == 200:
                 return response
             elif response.status_code in (200, 400, 404):
                 try:
-                    return response.json()
+                    return json_resp
                 except Exception:
                     raise ConnectorError({'status_code': str(response.status_code), 'response': response.content})
+            elif response.status_code == 401:
+                raise ConnectionError(json_resp.get('message'))
             else:
-                logger.error('Failed with response {0}'.format(response))
-                raise ConnectorError(
-                    {'status': 'Failure', 'status_code': str(response.status_code), 'response': response.content})
-        except req_exceptions.SSLError:
+                logger.error({'status': 'Failure', 'status_code': str(response.status_code), 'response': response.text})
+                raise ConnectorError(json_resp.get('message',response.text))
+                    
+        except req_exceptions.SSLError :
             logger.error('An SSL error occurred')
             raise ConnectorError('An SSL error occurred')
         except req_exceptions.ConnectionError:
@@ -80,13 +85,14 @@ def get_domain_reputation(config, params):
 
 def get_url_reputation(config, params):
     """
-    Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.
+    Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.
     :param config: config
     :param params: params
     :return: Returns reputation and details from Maltiverse.
     """
     obj = Maltiverse(config)
-    endpoint = '/url/{0}'.format(params.get('urlhash'))
+    url = hashlib.sha256((params.get('url')).encode('utf-8')).hexdigest()
+    endpoint = '/url/{0}'.format(url)
     return obj.make_api_call(endpoint=endpoint)
 
 
@@ -98,7 +104,10 @@ def get_file_reputation(config, params):
     :return: Returns reputation and details from Maltiverse.
     """
     obj = Maltiverse(config)
-    endpoint = '/sample/{0}'.format(params.get('filehash'))
+    if "FileHash" in params.get("filehash_type"):
+        hash_endpoint = constants.HASH_MAPPING.get(params.get("filehash_type"))
+    hash_endpoint = hash_endpoint.lower()
+    endpoint = '/sample/{0}'.format(params.get('filehash')) if hash_endpoint == 'sha256' else '/sample/'+ hash_endpoint +'/{0}'.format(params.get('filehash'))
     return obj.make_api_call(endpoint=endpoint)
 
 
@@ -106,7 +115,7 @@ def get_file_reputation(config, params):
 def _check_health(config):
     try:
         obj = Maltiverse(config)
-        obj.make_api_call(endpoint='/', health_check=True)
+        obj.make_api_call(endpoint='/ip/1.1.1.1', health_check=True)
         return True
     except Exception as err:
         logger.exception('Health check failed with: {0}'.format(err))

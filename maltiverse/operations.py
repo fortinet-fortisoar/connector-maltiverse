@@ -5,7 +5,7 @@
   Copyright end """
 import requests
 import hashlib
-import constants
+from .constants import *
 from connectors.core.connector import get_logger, ConnectorError
 from requests import exceptions as req_exceptions
 logger = get_logger('maltiverse')
@@ -105,7 +105,7 @@ def get_file_reputation(config, params):
     """
     obj = Maltiverse(config)
     if "FileHash" in params.get("filehash_type"):
-        hash_endpoint = constants.HASH_MAPPING.get(params.get("filehash_type"))
+        hash_endpoint = hash_mapping.get(params.get("filehash_type"))
     hash_endpoint = hash_endpoint.lower()
     endpoint = '/sample/{0}'.format(params.get('filehash')) if hash_endpoint == 'sha256' else '/sample/'+ hash_endpoint +'/{0}'.format(params.get('filehash'))
     return obj.make_api_call(endpoint=endpoint)

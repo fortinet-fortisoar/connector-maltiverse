@@ -178,7 +178,7 @@
         {
             "operation": "get_url_reputation",
             "title": "Get URL Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the URL sha256 hash submitted to determine if it is suspicious based on the URL sha256 hash you have specified.",
+            "description": "Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.",
             "category": "investigation",
             "annotation": "get_url_reputation",
             "output_schema": {
@@ -205,13 +205,13 @@
             "enabled": true,
             "parameters": [
               {
-                "title": "URL Sha256 Hash",
+                "title": "URL",
                 "required": true,
                 "editable": true,
                 "visible": true,
                 "type": "text",
-                "name": "urlhash",
-                "description": "Specify the URL sha256 hash for which you want to retrieve a Maltiverse reputation."
+                "name": "url",
+                "description": "Specify the URL for which you want to retrieve a Maltiverse reputation."
               }
               
             ]
@@ -245,6 +245,16 @@
             },
             "enabled": true,
             "parameters": [
+              {
+                "title": "File Hash Type",
+                "required": true,
+                "editable": true,
+                "visible": true,
+                "type": "select",
+                "options":["MD5","SHA1","SHA256","SHA512"],
+                "name": "filehash_type",
+                "description": "Specify the File Hash Type for which you want to retrieve a Maltiverse reputation."
+              },
               {
                 "title": "File Hash",
                 "required": true,

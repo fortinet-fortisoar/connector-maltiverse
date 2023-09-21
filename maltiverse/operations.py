@@ -104,8 +104,7 @@ def get_file_reputation(config, params):
     :return: Returns reputation and details from Maltiverse.
     """
     obj = Maltiverse(config)
-    if "FileHash" in params.get("filehash_type"):
-        hash_endpoint = hash_mapping.get(params.get("filehash_type"))
+    hash_endpoint = hash_mapping.get(params.get("filehash_type"),params.get("filehash_type"))
     hash_endpoint = hash_endpoint.lower()
     endpoint = '/sample/{0}'.format(params.get('filehash')) if hash_endpoint == 'sha256' else '/sample/'+ hash_endpoint +'/{0}'.format(params.get('filehash'))
     return obj.make_api_call(endpoint=endpoint)

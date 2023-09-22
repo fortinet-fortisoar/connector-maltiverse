@@ -16,7 +16,7 @@
       "Domain_Enrichment",
       "File_Enrichment"
     ],
-    "help_online": "",
+    "help_online": "https://docs.fortinet.com/document/fortisoar/1.0.0/maltiverse/685/maltiverse-v1-0-0",
     "configuration": {
         "fields": [
           {
@@ -55,7 +55,7 @@
         {
             "operation": "get_ip_reputation",
             "title": "Get IP Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the IP address submitted to determine if it is suspicious based on the IP address you have specified.",
+            "description": "Retrieves the reputation of the IP address submitted to Maltiverse.",
             "category": "investigation",
             "annotation": "get_ip_reputation",
             "output_schema": {
@@ -105,7 +105,7 @@
                 "visible": true,
                 "type": "text",
                 "name": "ip",
-                "description": "Specify the IP address for which you want to retrieve a Maltiverse reputation."
+                "description": "Specify the IP address whose reputation is to be retrieved from Maltiverse"
               }
               
             ]
@@ -113,7 +113,7 @@
         {
             "operation": "get_domain_reputation",
             "title": "Get Domain Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the Domain submitted to determine if it is suspicious based on the Domain you have specified.",
+            "description": "Retrieves the reputation of the domain submitted to Maltiverse.",
             "category": "investigation",
             "annotation": "get_domain_reputation",
             "output_schema": {
@@ -170,7 +170,7 @@
                 "visible": true,
                 "type": "text",
                 "name": "domain",
-                "description": "Specify the Domain for which you want to retrieve a Maltiverse reputation."
+                "description": "Specify the domain name whose reputation is to be retrieved from Maltiverse."
               }
               
             ]
@@ -178,7 +178,7 @@
         {
             "operation": "get_url_reputation",
             "title": "Get URL Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the URL submitted to determine if it is suspicious based on the URL you have specified.",
+            "description": "Retrieves the reputation of the URL submitted to Maltiverse.",
             "category": "investigation",
             "annotation": "get_url_reputation",
             "output_schema": {
@@ -211,7 +211,7 @@
                 "visible": true,
                 "type": "text",
                 "name": "url",
-                "description": "Specify the URL for which you want to retrieve a Maltiverse reputation."
+                "description": "Specify the URL whose reputation is to be retrieved from Maltiverse."
               }
               
             ]
@@ -219,7 +219,7 @@
         {
             "operation": "get_file_reputation",
             "title": "Get File Reputation",
-            "description": "Retrieves a reputation from Maltiverse for the File Hash submitted to determine if it is suspicious based on the File Hash you have specified.",
+            "description": "Retrieves the reputation of the file corresponding to the file hash submitted to Maltiverse.",
             "category": "investigation",
             "annotation": "get_file_reputation",
             "output_schema": {
@@ -253,7 +253,7 @@
                 "type": "select",
                 "options":["MD5","SHA1","SHA256","SHA512"],
                 "name": "filehash_type",
-                "description": "Specify the File Hash Type for which you want to retrieve a Maltiverse reputation."
+                "description": "Select the File Hash type of the file whose reputation is to be retrieved from Maltiverse."
               },
               {
                 "title": "File Hash",
@@ -262,7 +262,7 @@
                 "visible": true,
                 "type": "text",
                 "name": "filehash",
-                "description": "Specify the File Hash for which you want to retrieve a Maltiverse reputation."
+                "description": "Specify the File Hash of the file whose reputation is to be retrieved from Maltiverse."
               }
             ]
         }

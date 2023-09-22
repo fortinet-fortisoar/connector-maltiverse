@@ -88,7 +88,7 @@
                   {
                     "option": "Yes",
                     "step_iri": "/api/3/workflow_steps/1d9751d1-0c3d-475f-8ec2-01c95956e61d",
-                    "condition": "{{ vars.steps.Get_File_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "condition": "{{ (vars.steps.Get_File_Reputation.status == \"Success\" and not vars.steps.Get_File_Reputation.data.message is defined) or vars.useMockOutput }}",
                     "step_name": "Maltiverse Reputation Summary"
                   },
                   {
@@ -427,7 +427,7 @@
                   {
                     "option": "Yes",
                     "step_iri": "/api/3/workflow_steps/2df7fec8-6946-4de3-b99a-1a174b779051",
-                    "condition": "{{ vars.steps.Get_Domain_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "condition": "{{ (vars.steps.Get_Domain_Reputation.status == \"Success\" and not vars.steps.Get_Domain_Reputation.data.message is defined) or vars.useMockOutput }}",
                     "step_name": "Maltiverse Reputation Summary"
                   },
                   {
@@ -766,7 +766,7 @@
                   {
                     "option": "Yes",
                     "step_iri": "/api/3/workflow_steps/51746771-7195-4fe9-a8c9-944cef338452",
-                    "condition": "{{ vars.steps.Get_IP_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "condition": "{{ (vars.steps.Get_IP_Reputation.status == \"Success\" and not vars.steps.Get_IP_Reputation.data.message is defined) or vars.useMockOutput }}",
                     "step_name": "Maltiverse Reputation Summary"
                   },
                   {
@@ -1203,7 +1203,7 @@
                   {
                     "option": "Yes",
                     "step_iri": "/api/3/workflow_steps/757f0c3c-1982-480a-a66c-fa45a276391e",
-                    "condition": "{{ vars.steps.Get_URL_Reputation.status == \"Success\" or vars.useMockOutput }}",
+                    "condition": "{{ (vars.steps.Get_URL_Reputation.status == \"Success\" and not vars.steps.Get_URL_Reputation.data.message is defined) or vars.useMockOutput }}",
                     "step_name": "Maltiverse Reputation Summary"
                   },
                   {
